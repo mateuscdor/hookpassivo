@@ -4,7 +4,7 @@ An implementation of [@adiwajshing/Baileys](https://github.com/adiwajshing/Baile
 
 ## Requirements
 
--   **NodeJS** version **14.5.0** or higher.
+-   **NodeJS** version **16.x** or higher.
 
 ## Installation
 
