@@ -1,16 +1,16 @@
-# My Owen API By Baileys
+# Owen API By Baileys
 
-An implementation of [@adiwajshing/Baileys](https://github.com/adiwajshing/Baileys) as a simple RESTful API service with multiple device support. This project implements both **Legacy** (Normal WhatsApp Web) and **Beta Multi-Device** client so that you can choose and use one of them easily.
+Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simples com suporte a vários dispositivos. Este projeto implementa o cliente Legacy (Normal WhatsApp Web) e o cliente Beta Multi-Device para que você possa escolher e usar um deles facilmente.
 
 ## Requirements
 
--   **NodeJS** version **16.x** or higher.
+-   **NodeJS** version **16.x** ou superior.
 
-## Installation
+## Instalando a Owen API
 
-1. Download or clone this repo.
-2. Enter to the project directory.
-3. Install the dependencies.
+1. Baixando e Instalando as dependências..
+1.1 - ```sudo apt install -y git && git clone https://github.com/owenzap/apiowen.git && sudo chmod -R 777 ./OwenAPI && cd && cd ./OwenAPI```
+1.2 - ```sudo npm install && sudo npm install -g pm2 && pm2 start app.js --name Owen_API && pm2 save```
 
 ## `.env` Configurations
 
