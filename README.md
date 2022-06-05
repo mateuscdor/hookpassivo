@@ -100,14 +100,14 @@ Aqui estão alguns exemplos:
 
 Para mais exemplos, confira os documentos de Baileys aqui .
 
-## Notes
+## Notas
 
--   The app only provide a very simple validation, you may want to implement your own.
--   When sending message, your `message` property will not be validated, so make sure you sent the right data!
--   There's no authentication, you may want to implement your own.
--   The **Beta Multi-Device** client use provided Baileys's `makeInMemoryStore` method which will store your data in memory and a json file, you may want to use a better data management.
--   Automatically reading incoming messages is now disabled by default. Uncomment `whatsapp.js:91-105` to enable this behaviour.
+- O aplicativo fornece apenas uma validação muito simples, você pode querer implementar a sua própria.
+- Ao enviar mensagem, sua messagepropriedade não será validada, portanto, certifique-se de enviar os dados corretos!
+- Não há autenticação, você pode querer implementar a sua própria.
+- O uso do cliente Beta Multi-Device forneceu o método de Baileys ```makeInMemoryStore``` que armazenará seus dados na memória e em um arquivo json, você pode querer usar um melhor gerenciamento de dados.
+- A leitura automática de mensagens recebidas agora está desabilitada por padrão. Descomente whatsapp.js:91-105para habilitar esse comportamento.
 
-## Notice
+## Notificação
 
-This project is intended for learning purpose only, don't use it for spamming or any activities that's prohibited by **WhatsApp**.
+Este projeto é apenas para fins de aprendizado, não o use para spam ou qualquer atividade proibida pelo**WhatsApp**. .
