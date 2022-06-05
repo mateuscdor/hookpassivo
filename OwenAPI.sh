@@ -33,6 +33,10 @@ sudo apt update && sudo apt install unzip && curl -sL https://deb.nodesource.com
 
 cd ~
 
+cd && cd ./OwenAPI
+
+cp .env_exemplo .env
+
 sed -i "/^HOST/s/.*/HOST=$host/" .env
 sed -i "/^PORT/s/.*/PORT=$porta/" .env
 
