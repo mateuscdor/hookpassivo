@@ -36,9 +36,9 @@ Confira também o examplesdiretório para os exemplos básicos de uso.
 
 ## API Docs
 
-The API documentation is available online [here](https://documenter.getpostman.com/view/18988925/UVeNni36). You can also import the **Postman Collection File** `(postman_collection.json)` into your Postman App alternatively.
+A documentação da API está disponível online aqui . Você também pode importar o arquivo de coleção Postman (postman_collection.json) em seu aplicativo Postman alternativamente.
 
-The server will respond in following JSON format:
+O servidor responderá no seguinte formato JSON:
 
 ```javascript
 {
@@ -50,9 +50,9 @@ The server will respond in following JSON format:
 
 ## Sending Message
 
-All send message endpoints is now accept a JSON body, this gives you the ability to send any kind of supported message. You can pass any kind supported message into the `message` property.
+Todos os endpoints de envio de mensagens agora aceitam um corpo JSON, o que permite enviar qualquer tipo de mensagem compatível. Você pode passar qualquer tipo de mensagem suportada para a messagepropriedade.
 
-Here's some examples:
+Aqui estão alguns exemplos:
 
 ```javascript
 // Send text message
