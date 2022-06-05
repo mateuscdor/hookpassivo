@@ -14,11 +14,11 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 ## Instalando as dependências & Inicializando..
 2 - ```cd && cd ./OwenAPI && sudo npm install && sudo npm install -g pm2 && pm2 start app.js --name Owen_API && pm2 startup && pm2 save```
 
-## `.env` Configurations
+## Configurando o `.env` 
 
 ```env
 # Listening Host
-HOST=127.0.0.1
+HOST=127.0.0.1 (Caso utilize, altere aqui para o IP da VPS ou dominio)
 
 # Listening Port
 PORT=8000
