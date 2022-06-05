@@ -8,7 +8,7 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 
 ## Uso
 
-1. Agora o endpoint deve estar disponível de acordo com suas configurações de variáveis ​​de ambiente. O padrão é em http://localhost:3000 e/ou http:127.0.0.1:3000.
+1. Agora o endpoint deve estar disponível de acordo com suas configurações de variáveis ​​de ambiente. O padrão é em http://localhost:3000 e/ou http://127.0.0.1:3000.
 Confira também o examplesdiretório para os exemplos básicos de uso.
 
 ## API Docs
