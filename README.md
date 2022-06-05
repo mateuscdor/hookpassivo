@@ -98,7 +98,7 @@ Here's some examples:
 }
 ```
 
-For more examples, check out Baileys's docs [here](https://github.com/adiwajshing/Baileys#sending-messages).
+Para mais exemplos, confira os documentos de Baileys aqui .
 
 ## Notes
 
@@ -107,7 +107,6 @@ For more examples, check out Baileys's docs [here](https://github.com/adiwajshin
 -   There's no authentication, you may want to implement your own.
 -   The **Beta Multi-Device** client use provided Baileys's `makeInMemoryStore` method which will store your data in memory and a json file, you may want to use a better data management.
 -   Automatically reading incoming messages is now disabled by default. Uncomment `whatsapp.js:91-105` to enable this behaviour.
--   If you have problems when deploying on **CPanel** or any other similar hosting, transpiling your code into **CommonJS** should fix the problems.
 
 ## Notice
 
