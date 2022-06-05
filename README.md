@@ -4,38 +4,12 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 
 ## Instalando a Owen API
 
-
 ## iniciando o auto instalador OwenAPI
 - ```sudo apt install -y git && git clone https://github.com/owenzap/apiowen.git ./OwenAPI/ && sudo chmod -R 777 ./OwenAPI && cd ./OwenAPI && sudo ./OwenAPI.sh```
 
-##  Preparando o ambiente para instalação
-1 - ```sudo apt update && sudo apt install unzip && curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh && sudo bash nodesource_setup.sh && sudo apt install nodejs && sudo apt update && sudo apt install mysql-server -y```
-
-## Baixando Repositorio OwenAPI
-2 - ```sudo apt install -y git && git clone https://github.com/owenzap/apiowen.git ./OwenAPI/ && sudo chmod -R 777 ./OwenAPI && cd ./OwenAPI```
-
-## Instalando as dependências & Inicializando..
-3 - ```cd && cd ./OwenAPI && sudo npm install && sudo npm install -g pm2 && pm2 start app.js --name Owen_API && pm2 startup && pm2 save```
-
-## Configurando o `.env` 
-
-```env
-# Listening Host
-HOST=127.0.0.1 (Caso utilize, altere aqui para o IP da VPS ou dominio)
-
-# Listening Port
-PORT=8000
-
-# Maximum Reconnect Attempts
-MAX_RETRIES=5
-
-# Reconnect Interval (in Milliseconds)
-RECONNECT_INTERVAL=5000
-```
-
 ## Uso
 
-1. Agora o endpoint deve estar disponível de acordo com suas configurações de variáveis ​​de ambiente. O padrão é em http://localhost:8000.
+1. Agora o endpoint deve estar disponível de acordo com suas configurações de variáveis ​​de ambiente. O padrão é em http://localhost:3000 e/ou http:127.0.0.1:3000.
 Confira também o examplesdiretório para os exemplos básicos de uso.
 
 ## API Docs
