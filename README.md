@@ -29,12 +29,10 @@ MAX_RETRIES=5
 RECONNECT_INTERVAL=5000
 ```
 
-## Usage
+## Uso
 
-1. You can start the app by executing `npm run start` or `node .`.
-2. Now the endpoint should be available according to your environment variable configurations. Default is at `http://localhost:8000`.
-
-Also check out the `examples` directory for the basic usage examples.
+1. Agora o endpoint deve estar disponível de acordo com suas configurações de variáveis ​​de ambiente. O padrão é em http://localhost:8000.
+Confira também o examplesdiretório para os exemplos básicos de uso.
 
 ## API Docs
 
