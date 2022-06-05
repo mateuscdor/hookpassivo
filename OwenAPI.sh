@@ -24,7 +24,7 @@
 	host=$(whiptail --title "Informe o Host para a API (IP ou Dominio)" --inputbox "Pressione ENTER para usar o host: localhost, ou digite um host:" --fb 12 60 3>&1 1>&2 2>&3) ; saida=$?
 		if [[ $saida -eq '0' ]] ; then if [[ -z $host ]] ; then host=localhost ; fi else echo "saindo..." ; exit ; fi
 
-	done
+
 
 	msg "Vai tomar um cafe, beber uma gelada, fumar um cigarro que a instalacao vai comecar!";
 
