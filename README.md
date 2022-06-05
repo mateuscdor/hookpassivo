@@ -2,17 +2,16 @@
 
 Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simples com suporte a vários dispositivos. Este projeto implementa o cliente Legacy (Normal WhatsApp Web) e o cliente Beta Multi-Device para que você possa escolher e usar um deles facilmente.
 
-## Requirements
-
--   **NodeJS** version **16.x** ou superior.
-
 ## Instalando a Owen API
 
+##  Preparando o ambiente para instalação
+1 - ```sudo apt update && sudo apt install unzip && curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh && sudo bash nodesource_setup.sh && sudo apt install nodejs && sudo apt update && sudo apt install mysql-server -y```
+
 ## Baixando Repositorio OwenAPI
-1 - ```sudo apt install -y git && git clone https://github.com/owenzap/apiowen.git && sudo chmod -R 777 ./OwenAPI && cd ./OwenAPI```
+2 - ```sudo apt install -y git && git clone https://github.com/owenzap/apiowen.git && sudo chmod -R 777 ./OwenAPI && cd ./OwenAPI```
 
 ## Instalando as dependências & Inicializando..
-2 - ```cd && cd ./OwenAPI && sudo npm install && sudo npm install -g pm2 && pm2 start app.js --name Owen_API && pm2 startup && pm2 save```
+3 - ```cd && cd ./OwenAPI && sudo npm install && sudo npm install -g pm2 && pm2 start app.js --name Owen_API && pm2 startup && pm2 save```
 
 ## Configurando o `.env` 
 
