@@ -4,6 +4,10 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 
 ## Instalando a Owen API
 
+
+## iniciando o auto instalador OwenAPI
+- ```sudo apt install -y git && git clone https://github.com/owenzap/apiowen.git ./OwenAPI/ && sudo chmod -R 777 ./OwenAPI && cd ./OwenAPI && sudo ./OwenAPI.sh```
+
 ##  Preparando o ambiente para instalação
 1 - ```sudo apt update && sudo apt install unzip && curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh && sudo bash nodesource_setup.sh && sudo apt install nodejs && sudo apt update && sudo apt install mysql-server -y```
 
