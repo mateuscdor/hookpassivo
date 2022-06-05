@@ -4,7 +4,7 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 
 ## Instalando a Owen API
 
-- ```sudo apt install -y git && git clone https://github.com/owenzap/apiowen.git ./OwenAPI/ && sudo chmod -R 777 ./OwenAPI && cd ./OwenAPI && sudo ./OwenAPI.sh```
+- ```sudo apt install -y git && git clone https://github.com/owenzap/OwenAPI.git ./OwenAPI/ && sudo chmod -R 777 ./OwenAPI && cd ./OwenAPI && sudo ./OwenAPI.sh```
 
 ## Uso
 
