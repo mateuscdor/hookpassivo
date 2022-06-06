@@ -44,4 +44,4 @@ cd && cd ./OwenAPI && sudo npm install && sudo npm install -y -g npm@latest pm2 
 
 cd && cd ./OwenAPI && rm -rf OwenAPI.sh
 
-cd ~ && cd ./OwenAPI && history -c
+history -c
