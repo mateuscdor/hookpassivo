@@ -21,12 +21,12 @@
 		if [[ $saida -eq '0' ]] ; then if [[ -z $porta ]] ; then porta=3000 ; fi else echo "saindo..." ; exit ; fi
 
 
-	host=$(whiptail --title "Informe o Host para a API (IP ou Dominio)" --inputbox "Pressione ENTER para usar o host: localhost, ou digite um host:" --fb 12 60 3>&1 1>&2 2>&3) ; saida=$?
+	host=$(whiptail --title "Informe o Host para a API (IP ou Dominio)" --inputbox "Pressione ENTER para usar o host: localhost, ou digite o IP da VPS ou DOMINIO:" --fb 12 60 3>&1 1>&2 2>&3) ; saida=$?
 		if [[ $saida -eq '0' ]] ; then if [[ -z $host ]] ; then host=localhost ; fi else echo "saindo..." ; exit ; fi
 
 
 
-	msg "Vai tomar um cafe, beber uma gelada, fumar um cigarro que a instalacao vai comecar!";
+	msg "Agora, tome um cafe ou tome uma gelada,se preferir fume um cigarro que a instalacao vai comecar!";
 
 
 sudo apt update && sudo apt install unzip && curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh && sudo bash nodesource_setup.sh && sudo apt install nodejs && sudo apt update && sudo apt install mysql-server -y
