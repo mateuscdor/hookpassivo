@@ -1,5 +1,5 @@
 {
-  "name": "baileys-api",
+  "name": "Owen API",
   "description": "Simple RESTful WhatsApp API",
   "private": true,
   "main": "app.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ookamiiixd/baileys-api.git"
+    "url": "git+https://github.com/owenzap/OwenAPI.git"
   },
-  "author": "ookamiiixd <ookamiiixd@gmail.com>",
+  "author": "OwenAPI>",
   "bugs": {
-    "url": "https://github.com/ookamiiixd/baileys-api/issues"
+    "url": "https://github.com/owenzap/OwenAPI/issues"
   },
-  "homepage": "https://github.com/ookamiiixd/baileys-api#readme",
+  "homepage": "https://github.com/owenzap/OwenAPI#readme",
   "engines": {
-    "node": ">=14.5.0"
+    "node": ">=16.x"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^4.1.0",
