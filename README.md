@@ -8,11 +8,13 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 
 -   **NodeJS** version **16.x** ou superior.
 -   **Ubutun** version **20.x** ou superior.
+
 ## Instalação
 
 1. Fazer download ou Clone do Repositorio
 2. Acessar o repositorio do projeto.
 3. Instalar as dependencias.
+4. Inicializar a aplicação.
 
 ## Configurando o `.env` 
 
