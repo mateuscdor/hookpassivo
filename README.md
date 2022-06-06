@@ -6,8 +6,9 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 
 ## Requerimentos
 
+-   **Ubutun** version **20.x** ou superior
 -   **NodeJS** version **16.x** ou superior.
--   **Ubutun** version **20.x** ou superior.
+-   **PM2** version **8.x** ou superior.
 
 ## Instalação
 
