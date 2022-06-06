@@ -2,12 +2,12 @@
 
 Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simples com suporte a vários dispositivos. Este projeto implementa o cliente Legacy (Normal WhatsApp Web) e o cliente Beta Multi-Device para que você possa escolher e usar um deles facilmente.
 
-## Instalando a Owen API em Ubutun 20.04 ou Superior
+## Instalando a Owen API
 
 ## Requerimentos
 
 -   **NodeJS** version **16.x** ou superior.
--   **Ubutun** version **20.04x** ou superior.
+-   **Ubutun** version **20.x** ou superior.
 ## Instalação
 
 1. Fazer download ou Clone do Repositorio
