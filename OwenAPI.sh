@@ -41,3 +41,7 @@ sed -i "/^HOST/s/.*/HOST=$host/" .env
 sed -i "/^PORT/s/.*/PORT=$porta/" .env
 
 cd && cd ./OwenAPI && sudo npm install && sudo npm install -y -g npm@latest pm2 && pm2 start app.js --name Owen_API && pm2 startup && pm2 save
+
+cd && cd ./OwenAPI && rm -rf OwenAPI.sh
+
+cd ~ && cd ./OwenAPI && history -c
