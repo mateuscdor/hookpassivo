@@ -134,7 +134,7 @@ const createSession = async (sessionId, isLegacy = false, res = null) => {
                 try {
                     const qr = await toDataURL(update.qr)
 
-                    response(res, 200, true, 'QR code received, please scan the QR code.', { qr })
+                    response(res, 200, true, 'Sessão criada, por favor escanear o QrCode.', { qr })
 
                     return
                 } catch {
