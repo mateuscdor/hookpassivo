@@ -23,7 +23,7 @@ const add = (req, res) => {
     const { id, isLegacy } = req.body
 
     if (isSessionExists(id)) {
-        return response(res, 409, false, 'A sessão já existe ou foi solicitada recetemente, use outro id.')
+        return response(res, 409, false, 'Session already exists, please use another id.')
     }
 
     createSession(id, isLegacy === 'true', res)
@@ -40,7 +40,7 @@ const del = async (req, res) => {
         deleteSession(id, session.isLegacy)
     }
 
-    response(res, 200, true, 'A sessão foi excluída com sucesso.')
+    response(res, 200, true, 'The session has been successfully deleted.')
 }
 
 export { find, status, add, del }
