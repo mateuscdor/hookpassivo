@@ -3,7 +3,7 @@
 Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simples com suporte a vários dispositivos. Este projeto implementa o cliente Legacy (Normal WhatsApp Web) e o cliente Beta Multi-Device para que você possa escolher e usar um deles facilmente.
 
 ## Caso queiram ajudar financeiramente a manter o projeto, pode contribuir no link abaixo ou via PIX: 
-- [PicPay]([https://pag.ae/](https://app.picpay.com/user/owenzap)) 
+- [PicPay](https://app.picpay.com/user/owenzap)
 - Chave PIX aleatoria; d80c574e-4c5a-4f93-ae26-d5ba1806ee9c
 
 ## Instalando a Owen API
