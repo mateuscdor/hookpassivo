@@ -113,7 +113,7 @@ const createSession = async (sessionId, isLegacy = false, res = null) => {
         if (connection === 'close') {
             if (statusCode === DisconnectReason.loggedOut || !shouldReconnect(sessionId)) {
                 if (res && !res.headersSent) {
-                    response(res, 500, false, 'Unable to create session.')
+                    response(res, 500, false, 'Não foi possível criar a sessão.')
                 }
 
                 return deleteSession(sessionId, isLegacy)
@@ -132,11 +132,11 @@ const createSession = async (sessionId, isLegacy = false, res = null) => {
                 try {
                     const qr = await toDataURL(update.qr)
 
-                    response(res, 200, true, 'QR code received, please scan the QR code.', { qr })
+                    response(res, 200, true, 'Código gerado, por favor digitalize o QR Code.', { qr })
 
                     return
                 } catch {
-                    response(res, 500, false, 'Unable to create QR code.')
+                    response(res, 500, false, 'Não foi possível Gerar o código QR.')
                 }
             }
 
