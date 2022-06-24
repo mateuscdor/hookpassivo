@@ -81,7 +81,7 @@ Aqui estão alguns exemplos:
 }
 ```
 
-Para mais exemplos, confira os documentos de Baileys aqui .
+Para mais exemplos, confira a documentação [Aqui](https://github.com/owenzap/OwenAPI/blob/main/documentacao_postman.json) .
 
 ## Notas
 
