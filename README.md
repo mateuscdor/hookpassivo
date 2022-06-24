@@ -14,12 +14,7 @@ sudo apt install -y git && rm -rf OwenAPI && git clone https://github.com/owenza
 
 ## Uso
 
-1. Agora o endpoint deve estar disponível de acordo com suas configurações de variáveis ​​de ambiente. O padrão é em http://localhost:3000 e/ou http://127.0.0.1:3000.
-Confira também o examplesdiretório para os exemplos básicos de uso.
-
-## API Docs
-
-A documentação da API está disponível online aqui . Você também pode importar o arquivo de coleção Postman (postman_collection.json) em seu aplicativo Postman alternativamente.
+1. Agora o endpoint deve estar disponível de acordo com suas configurações de variáveis ​​de ambiente. O padrão é em http://localhost:3000.
 
 O servidor responderá no seguinte formato JSON:
 
@@ -30,6 +25,11 @@ O servidor responderá no seguinte formato JSON:
     data: {}|[] // object or array of object
 }
 ```
+
+## API Docs
+
+A documentação da API está disponível online [Aqui](https://github.com/owenzap/OwenAPI/blob/main/documentacao_postman.json) . Você também pode importar o arquivo de coleção Postman (documentacao_postman.json) em seu aplicativo Postman alternativamente.
+
 
 ## Sending Message
 
