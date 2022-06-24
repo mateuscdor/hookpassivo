@@ -1,41 +1,15 @@
-# Owen API by Baileys
-
 Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simples com suporte a vários dispositivos. Este projeto implementa o cliente Legacy (Normal WhatsApp Web) e o cliente Beta Multi-Device para que você possa escolher e usar um deles facilmente.
 
 ## Caso queiram ajudar financeiramente a manter o projeto, pode contribuir no link abaixo ou via PIX: 
 - [PicPay](https://app.picpay.com/user/owenzap)
 - Chave PIX aleatoria; d80c574e-4c5a-4f93-ae26-d5ba1806ee9c
 
-## Instalando a Owen API
+##Instalador Automatico Owen API By OwenZap
 
-## Requerimentos
-
--   **Ubutun** version **20.x** ou superior
--   **NodeJS** version **16.x** ou superior.
--   **PM2** version **8.x** ou superior.
-
-## Instalação
-
-1. Fazer download ou Clone do Repositorio
-2. Acessar o repositorio do projeto.
-3. Instalar as dependencias.
-4. Inicializar a aplicação.
-
-## Configurando o `.env` 
-
-```env
-# Listening Host
-HOST=127.0.0.1 (caso utilize, insira o ip da VPS ou Dominio aqui.)
-
-# Listening Port
-PORT=3000
-
-# Maximum Reconnect Attempts
-MAX_RETRIES=5
-
-# Reconnect Interval (in Milliseconds)
-RECONNECT_INTERVAL=5000
+```bash
+sudo apt install -y git && rm -rf OwenAPI && git clone https://github.com/owenzap/OwenAPI.git && sudo chmod -R 777 ./OwenAPI && sudo ./OwenAPI/OwenAPI.sh
 ```
+
 ## Uso
 
 1. Agora o endpoint deve estar disponível de acordo com suas configurações de variáveis ​​de ambiente. O padrão é em http://localhost:3000 e/ou http://127.0.0.1:3000.
