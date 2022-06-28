@@ -7,7 +7,7 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 - Chave PIX aleatoria; d80c574e-4c5a-4f93-ae26-d5ba1806ee9c
 
 
-## Instalador Automatico Owen API By OwenZap
+## Instalador Automatico Owen API By OwenBR
 
 ```bash
 sudo apt install -y git && rm -rf OwenAPI && git clone https://github.com/owenzap/OwenAPI.git && sudo chmod -R 777 ./OwenAPI && sudo ./OwenAPI/OwenAPI.sh
