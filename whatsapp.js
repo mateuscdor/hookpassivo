@@ -93,6 +93,7 @@ const createSession = async (sessionId, isLegacy = false, res = null) => {
 
     // Automatically read incoming messages, uncomment below codes to enable this behaviour
     wa.ev.on('messages.upsert', async (m) => {
+        console.log(m);
         try {
             const message = m.messages[0]
             if (typeof message.key.participant !== 'undefined') {
