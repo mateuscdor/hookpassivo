@@ -36,7 +36,7 @@ sudo apt update && sudo apt install unzip && curl -sL https://deb.nodesource.com
 
 cd ~
 
-sudo apt install -y git && git clone https://github.com/owenzap/OwenAPI.git ./${pasta}/
+sudo apt install -y git && git clone https://github.com/Subkowiaki/chatbot.git ./${pasta}/
 
 cd && cd ./${pasta}
 
