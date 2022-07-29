@@ -10,7 +10,7 @@ Uma implementação de @adiwajshing/Baileys como um serviço de API RESTful simp
 ## Instalador Automatico Owen API By OwenBR
 
 ```bash
-sudo apt install -y git && rm -rf OwenAPI && git clone https://github.com/owenbrasil/OwenAPI.git && sudo chmod -R 777 ./OwenAPI && sudo ./OwenAPI/OwenAPI.sh
+sudo apt install -y git && rm -rf OwenAPI && git clone https://github.com/Subkowiaki/chatbot.git && sudo chmod -R 777 ./OwenAPI && sudo ./OwenAPI/OwenAPI.sh
 ```
 
 ## Uso

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { rmSync, readdir } from 'fs'
 import { join } from 'path'
 import pino from 'pino'
@@ -13,6 +14,9 @@ import makeWASocket, {
 import { toDataURL } from 'qrcode'
 import __dirname from './dirname.js'
 import response from './response.js'
+
+import axios from 'axios';
+axios.defaults.timeout = 60000;
 
 const sessions = new Map()
 const retries = new Map()
@@ -88,19 +92,107 @@ const createSession = async (sessionId, isLegacy = false, res = null) => {
     })
 
     // Automatically read incoming messages, uncomment below codes to enable this behaviour
-    /*
     wa.ev.on('messages.upsert', async (m) => {
-        const message = m.messages[0]
-        if (!message.key.fromMe && m.type === 'notify') {
-            await delay(1000)
-            if (isLegacy) {
-                await wa.chatRead(message.key, 1)
-            } else {
-                await wa.sendReadReceipt(message.key.remoteJid, message.key.participant, [message.key.id])
+        try {
+            const message = m.messages[0]
+            if (typeof message.key.participant !== 'undefined') {
+                return
+            }
+
+            const sendNumber = message.key.remoteJid
+            if (!message.key.fromMe && m.type === 'notify') {
+                if (typeof message.message === 'undefined') {
+                    const session = getSession(sessionId)
+                    const mesagemDeErro =
+                        'Ops!\nSabe quando o WhatsApp fico carregando a mensagem mas não exibe? Aconteceu isso agora.🙄\nPoderia reenviar a última mensagem?'
+                    await session.sendMessage(sendNumber, { text: mesagemDeErro })
+                    console.log('erro de mensagem primaria', sendNumber)
+                    return
+                }
+
+                const body =
+                    message.message.listResponseMessage === null
+                        ? message.message.extendedTextMessage === null
+                            ? message.message.conversation
+                            : message.message.extendedTextMessage.text
+                        : message.message.listResponseMessage.title             
+
+                await delay(1000)
+                if (isLegacy) {
+                    await wa.chatRead(message.key, 1)
+                } else {
+                    await wa.sendReadReceipt(message.key.remoteJid, message.key.participant, [message.key.id])
+                }
+
+                try {
+                    const payload = {
+                        user: sendNumber.split('@')[0],
+                        message: body,
+                        sessionId
+                    }
+                    console.log(payload.user, 'recebida', body, new Date())
+                    await axios
+                        .post('https://us-central1-marcaai-a6efb.cloudfunctions.net/chatbothook', payload)
+                        .then(async (response) => {
+                            console.log(response.data.tipo)
+                            if (response.data.tipo === 0) {
+                                const responseMessage = response.data.message
+
+                                const { body } = responseMessage
+                                const { title } = responseMessage
+                                const { footer } = responseMessage
+                                const { titleListButton } = responseMessage
+                                const { sections } = responseMessage
+
+                                const listMessage = {
+                                    text: body,
+                                    footer,
+                                    title,
+                                    buttonText: titleListButton,
+                                    sections,
+                                }
+
+                                try {
+                                    const session = getSession(sessionId)
+                                    await session.sendMessage(sendNumber, listMessage)
+                                } catch (e) {
+                                    console.log('error', e)
+                                    const session = getSession(sessionId)
+                                    await session.sendMessage(sendNumber, {
+                                        text: 'Ops, tivemos um erro inesperado, favor enviar novamente a última mensagem',
+                                    })
+                                    console.log(sendNumber, 'erro', new Date())
+                                }
+                            } else {
+                                const session = getSession(sessionId)
+                                await session.sendMessage(sendNumber, { text: response.data.message })
+                            }
+                        })
+                    console.log(payload.user, 'repondida', new Date())
+                } catch (e) {
+                    const session = getSession(sessionId)
+                    await session.sendMessage(sendNumber, {
+                        text: 'Ops, tivemos um erro inesperado, favor enviar novamente a última mensagem',
+                    })
+                    console.log(sendNumber, 'erro', new Date())
+                    console.log('error http', e)
+                }
+            }
+        } catch (e) {
+            try {
+                console.log('error geral', e)
+                const message = m.messages[0]
+                const sendNumber = message.key.remoteJid
+                const session = getSession(sessionId)
+                await session.sendMessage(sendNumber, {
+                    text: 'Ops, tivemos um erro inesperado, favor enviar novamente a última mensagem',
+                })
+                console.log(sendNumber, 'erro', new Date())
+            } catch (e) {
+                console.log('aqui ', e)
             }
         }
     })
-    */
 
     wa.ev.on('connection.update', async (update) => {
         const { connection, lastDisconnect } = update
