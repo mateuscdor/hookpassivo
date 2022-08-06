@@ -128,7 +128,8 @@ const createSession = async (sessionId, isLegacy = false, res = null) => {
                     const payload = {
                         user: sendNumber.split('@')[0],
                         message: body,
-                        sessionId
+                        sessionId,
+                        fullData: message
                     }
                     console.log(payload.user, 'recebida', body, new Date())
                     await axios
