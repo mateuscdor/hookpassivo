@@ -92,6 +92,7 @@ const createSession = async (sessionId, isLegacy = false, res = null) => {
     })
 
     // Automatically read incoming messages, uncomment below codes to enable this behaviour
+    /*
     wa.ev.on('messages.upsert', async (m) => {      
         try {
             const message = m.messages[0]
@@ -194,7 +195,7 @@ const createSession = async (sessionId, isLegacy = false, res = null) => {
             }
         }
     })
-
+    */
     wa.ev.on('connection.update', async (update) => {
         const { connection, lastDisconnect } = update
         const statusCode = lastDisconnect?.error?.output?.statusCode
